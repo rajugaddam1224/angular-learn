@@ -1,0 +1,100 @@
+
+  <div class="form-group"> 
+    <!--firstname started-->
+    <div  class="row">
+        <div class="col-md-4"> 
+
+        </div>
+        <div class="col-md-4"> 
+            <label for="">First Name</label>
+          <input type="text"  class="form-control" [formControl]='firstnameCtrl'/>
+        </div>
+        <div class="col-md-4"> 
+
+        </div>
+    </div>
+    <!--firstname ended-->
+    <!--lastname started-->
+    <div  class="row">
+        <div class="col-md-4"> 
+
+        </div>
+        <div class="col-md-4"> 
+            <label for="">Last Name</label>
+          <input type="text"  class="form-control" [formControl]='lastnameCtrl'/>
+        </div>
+        <div class="col-md-4"> 
+
+        </div>
+    </div>
+    <!--last name ended-->
+<!--Gender started-->
+    <div  class="row">
+        <div class="col-md-4"> 
+
+        </div>
+        <div class="col-md-4"> 
+        <label for="">Gender</label>
+          <input type="radio" name="Gender" value="male" [formControl] ='genderCtrl' class="form-control" />Male
+          <input type="radio" name="Gender" value="female" [formControl] ='genderCtrl'  class="form-control" />Female
+        </div>
+        <div class="col-md-4"> 
+
+        </div>
+    </div>
+    <!--Gender ended-->
+<!--Email started-->
+    <div  class="row">
+        <div class="col-md-4"> 
+
+        </div>
+        <div class="col-md-4"> 
+            <label for="">Email</label>
+          <input type="text"  class="form-control" [formControl] ='emailCtrl' />
+        </div>
+        <div class="col-md-4"> 
+
+        </div>
+    </div>
+    <!--Email ended-->
+
+    <!--Password started-->
+    <div  class="row">
+      <div class="col-md-4"> 
+
+      </div>
+      <div class="col-md-4"> 
+        <label for="">Password</label>
+        <input type="password"  class="form-control" [formControl] ='passwordCtrl' />
+      </div>
+      <div class="col-md-4"> 
+
+      </div>
+    </div>
+    <!--Password ended-->
+    <!--Confirm password started-->
+    <div  class="row">
+        <div class="col-md-4"> 
+  
+        </div>
+        <div class="col-md-4"> 
+          <label for="">Confirm Password</label>
+          <input type="password"  class="form-control" [formControl] ='cpasswordCtrl' />
+        </div>
+        <div class="col-md-4"> 
+  
+        </div>
+      </div>
+    <!--Confirm password ended-->
+    <div  class="row" style="padding:10px;">
+        <div class="col-md-4"> 
+  
+        </div>
+        <div class="col-md-4"> 
+          <button class="form-control" style="width: 100px;" (click)='submitFormdata()'>Login</button>
+        </div>
+        <div class="col-md-4"> 
+  
+        </div>
+  </div>
+  </div>
